@@ -1,0 +1,8 @@
+<label for="title">title</label>
+<input id="title" type="text" name="post[:title]" placeholder="type your post's title here" value="<%= @post.try(:title)%>"><br>
+
+<label for="content">content</label>
+<textarea input id="content" rows="10" cols="50" name="post[:content]" placeholder="type your post here"></textarea><br>  
+
+<label for="price">price</label>
+<input id="price" type="text" name="post[:price]" placeholder="enter price" value="<%= @post.try(:price)%>"><br>    

@@ -1,0 +1,5 @@
+<h1> Hero's List </h1>
+
+<% @categories.each do |category| %>
+  <a href="/category/<%= category.id %>"><p><%= category.name %></p></a>
+<% end %>
